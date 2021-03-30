@@ -1,0 +1,3 @@
+For permisions 
+
+if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send('You need manage messages permission.')

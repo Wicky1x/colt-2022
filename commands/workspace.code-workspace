@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\.git"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\counters"
+		},
+		{
+			"path": "..\\events"
+		},
+		{
+			"path": "..\\handlers"
+		},
+		{
+			"path": "..\\models"
+		},
+		{
+			"path": "..\\node_modules"
+		}
+	]
+}
