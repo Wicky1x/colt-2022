@@ -5,7 +5,7 @@ module.exports = {
     const newEmbed = new Discord.MessageEmbed()
        .setColor('#c6e2ff')
        .setTitle('Invite')
-       .setURL('https://discord.com/oauth2/authorize?client_id=808349821625827328&scope=bot&permissions=8')
+       .setURL('https://discord.com/oauth2/authorize?client_id=817405339104051242&scope=bot&permissions=2147483647')
        .setDescription('Invite my Bot to your server!')
 
        message.channel.send(newEmbed);
