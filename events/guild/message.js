@@ -1,4 +1,5 @@
 require('dotenv').config();
+const db = require('quick.db')
 
 const cooldowns = new Map();
 
@@ -10,10 +11,13 @@ const profileModel = require("../../models/profileSchema");
 const { mapReduce } = require('../../models/profileSchema');
 
 module.exports = async (Discord, client, message) =>{
-    
+
+
+
     const prefix = process.env.PREFIX;
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
+        
     let profileData;
     try {
         profileData = await profileModel.findOne({  userID: message.author.id});
@@ -29,6 +33,23 @@ module.exports = async (Discord, client, message) =>{
     } catch (err) {
         console.log(err);
     }
+
+
+    
+    
+
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+
+
+
+
+    
+
+
+
+
+
 
     
 

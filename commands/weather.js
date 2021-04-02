@@ -8,7 +8,7 @@ module.exports = {
     description: "Checks a weather forecast",
 
     async execute (client, message, args){
-
+        if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send('You need Admin permission.')
     weather.find({search: args.join(" "), degreeType: 'C'}, function (error, result){
         
         if(error) return message.channel.send(error);

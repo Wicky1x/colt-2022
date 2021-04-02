@@ -1,5 +1,7 @@
 module.exports = {
+
     name: "clear",
+
     description: "Clears messages",
 
     async execute (client, message, args) {

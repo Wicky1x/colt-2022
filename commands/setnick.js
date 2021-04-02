@@ -9,7 +9,7 @@ module.exports = {
    */
   execute: async (client, message, args) => {
     const member = message.mentions.members.first();
-
+    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send('You need manage messages permission.')
     if (!member) return message.reply("Please specify a member!");
 
     const arguments = args.slice(1).join(" ");
